@@ -8,6 +8,7 @@ namespace Menu
     {
         [SerializeField] private GameObject startPanel;
         [SerializeField] private GameObject optionsPanel;
+        [SerializeField] private Animator camAnimator;
 
         private void Start()
         {
@@ -16,6 +17,12 @@ namespace Menu
         }
 
         public void StartButton()
+        {
+            startPanel.SetActive(false);
+            camAnimator.SetTrigger("Transition");
+        }
+
+        private void LoadGameScene()
         {
             SceneManager.LoadScene("GameScene");
         }

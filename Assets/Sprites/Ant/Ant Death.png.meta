@@ -102,7 +102,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ant Death_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 342
+        width: 36
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161442b7b1d1a154f9146ec1749f955a
+      internalID: 205534762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 342
+        width: 36
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db53c0419f955c41998e7f6a4208dec
+      internalID: -1261583578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 342
+        width: 39
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ccd1a95b5a5b941850ab13ae66a66e
+      internalID: 2003214581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 339
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc87040939adfa44af3db2d1684205c
+      internalID: -1220414252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 339
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35d8b0a48c0ca0418b5b5fc623fe166
+      internalID: 256551524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 275
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aa484db601f2849bd4d00b1ff0af08
+      internalID: 1785957063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 275
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f638ef9d2f1b6bf48bd4128c4aacf534
+      internalID: -388260795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 275
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0775430644353a240932c3a37786869a
+      internalID: 733328403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 275
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d71b806ad1bdc74d97ec79250cd68fd
+      internalID: -65367846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_9
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 275
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dee2d6e148d7449b1ffc18ced7164a
+      internalID: 1230553419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 211
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af5f5f8ac199374e867c7ae89ca737f
+      internalID: -133790236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_11
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 211
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f62b133aed6ee941864e80d7e6b6829
+      internalID: -467293168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 211
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3f1e20da4a4e947a33774afe4a10f4
+      internalID: 756778413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 211
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f5b84177608054e9a53676a2e536ea
+      internalID: -17096998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_14
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 211
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82468b2e785af54691fa03fd6e60575
+      internalID: -2018109057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 147
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ad9cc78d7232d4e960e395f47da91d
+      internalID: 1526549535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_16
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 147
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dbf42bfccce1041be86b41d7e4d6c1
+      internalID: -265954854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 147
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29b17dd8d7747f4b8b0eacbf4beb792
+      internalID: -2054177194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 147
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09934b98b3617664e8a91ad49fe23498
+      internalID: -1602795116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_19
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 147
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ff56faee761434590badb3076730fb
+      internalID: 332193613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_20
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 83
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129d6d7e5fe0b4f46b49309a5da0c68b
+      internalID: -1120617949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_21
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 83
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911a0202372cead498e55d722b5915e3
+      internalID: 646325625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_22
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 83
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04272c13a6c4954994116c4e115012c
+      internalID: -1895988420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_23
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 83
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107da593e7117724bacf90ef055729d4
+      internalID: 754285596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 83
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21f83b9dff65ad4c94745585efe1b34
+      internalID: 1330378459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant Death_25
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 19
+        width: 39
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941b2232ec508cd4fb0455f005943a47
+      internalID: -19356720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -113,7 +659,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ant Death_3: -1220414252
+      Ant Death_5: 1785957063
+      Ant Death_2: 2003214581
+      Ant Death_7: 733328403
+      Ant Death_9: 1230553419
+      Ant Death_1: -1261583578
+      Ant Death_22: -1895988420
+      Ant Death_12: 756778413
+      Ant Death_4: 256551524
+      Ant Death_10: -133790236
+      Ant Death_14: -2018109057
+      Ant Death_8: -65367846
+      Ant Death_20: -1120617949
+      Ant Death_16: -265954854
+      Ant Death_13: -17096998
+      Ant Death_19: 332193613
+      Ant Death_18: -1602795116
+      Ant Death_6: -388260795
+      Ant Death_0: 205534762
+      Ant Death_23: 754285596
+      Ant Death_25: -19356720
+      Ant Death_21: 646325625
+      Ant Death_15: 1526549535
+      Ant Death_11: -467293168
+      Ant Death_17: -2054177194
+      Ant Death_24: 1330378459
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
