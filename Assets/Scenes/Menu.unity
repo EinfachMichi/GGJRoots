@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93de6a89831934c4494c3b1849cbf082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 3
+  lifeTime: 1.75
   image: {fileID: 696255983}
   sprites:
   - {fileID: 21300000, guid: 15fba974f518fb14a9f1d10e5835b9e6, type: 3}
