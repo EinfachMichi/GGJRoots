@@ -45,9 +45,10 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        if (_sceneName == "Menu")
+        if (_sceneName == "Menu" || _sceneName == "GameScene")
+        {
             Play("Theme", music);
+        }
     }
 
     public void Stop(string n, Sound[] soundArr)

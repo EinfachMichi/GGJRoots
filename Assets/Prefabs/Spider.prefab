@@ -146,10 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1fc6a1a098804a4a99514292ea084b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  maxHealth: 4
-  attackCooldown: 4
-  bulletSpeed: 6
+  damage: 1
+  maxHealth: 3
+  attackCooldown: 5
+  bulletSpeed: 7
   spiderWeb: {fileID: 8011069657968064982, guid: 5c5f6317c7345534aa0c52042b04bd40, type: 3}
   attackPoint: {fileID: 1230785174778902229}
   left: 0

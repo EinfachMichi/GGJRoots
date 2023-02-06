@@ -2110,6 +2110,116 @@ MonoBehaviour:
   leftFree: 1
   rightFree: 1
   gameOver: 0
+--- !u!1 &940754265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940754267}
+  - component: {fileID: 940754266}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &940754266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940754265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2adcff5394428f43b42c729d06cd673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSound:
+    name: 
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  music:
+  - name: Theme
+    loop: 1
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 4577d47907c03a54a93bacc573222195, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  effectSounds:
+  - name: GameOver
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 5f924e5c31c0e3644b20dd312cad591c, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Victory
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 8f85dd57e7698394e86b3cb9b5eb8afc, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Hit
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 098e39ab36f99ec489befb230d293c6d, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Heal
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 14f8f0317c609974080f571cb929607e, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Crack
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: eb34d165b656b9940bc4818734db1e08, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: PowerUp
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 4818a831262509e4db58bfcf8733f1d6, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: Bite
+    loop: 0
+    isPlaying: 0
+    clip: {fileID: 8300000, guid: 6947ecdff81b1ed4bb3984f78e462b7f, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+--- !u!4 &940754267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940754265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &972405288
 GameObject:
   m_ObjectHideFlags: 0

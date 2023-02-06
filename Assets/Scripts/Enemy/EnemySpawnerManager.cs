@@ -53,23 +53,23 @@ public class EnemySpawnerManager : MonoBehaviour
         
         if (timer <= 180)
         {
-            spawnCycleRange.y = 2.5f;
+            spawnCycleRange.y = 3.5f;
         }
         else if (timer <= 270)
         {
-            spawnCycleRange.y = 2f;
+            spawnCycleRange.y = 3f;
         }
         else if (timer <= 360)
         {
-            spawnCycleRange.y = 1.5f;
+            spawnCycleRange.y = 2.5f;
         }
         else if (timer <= 450)
         {
-            spawnCycleRange.y = 1.25f;
+            spawnCycleRange.y = 2f;
         }
         else if (timer <= 540)
         {
-            spawnCycleRange.y = 1f;
+            spawnCycleRange.y = 1.5f;
         }
     }
 
