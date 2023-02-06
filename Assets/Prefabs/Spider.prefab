@@ -147,11 +147,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  health: 2
-  attackCooldown: 5
+  maxHealth: 4
+  attackCooldown: 4
   bulletSpeed: 6
   spiderWeb: {fileID: 8011069657968064982, guid: 5c5f6317c7345534aa0c52042b04bd40, type: 3}
   attackPoint: {fileID: 1230785174778902229}
+  left: 0
+  right: 0
 --- !u!1 &1230785174778902230
 GameObject:
   m_ObjectHideFlags: 0

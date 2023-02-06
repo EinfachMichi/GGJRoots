@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Attack")]
     [SerializeField] private int damage;
-    [SerializeField] private int shootDamage;
+    [SerializeField] private float shootDamage;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float horizontalAttackpointPosition;
     [SerializeField] private float attackRadius;
@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform shootPoint;
     [SerializeField] private Transform shootAnchor;
+    [SerializeField] private Transform partenTrans;
+    [SerializeField] private GameObject floatingText;
+    [SerializeField] private Transform floatingSpawnPoint;
 
     private const float skinWidth = 0.15f;
     private const float gravity = -9.81f;
@@ -162,7 +165,7 @@ public class PlayerController : MonoBehaviour
         Vector2 dir = (mousePos - (Vector2) transform.position).normalized;
         GameObject proj = Instantiate(projectile, shootPoint.position, Quaternion.identity);
         proj.GetComponent<Rigidbody2D>().AddForce(dir * shootForce, ForceMode2D.Impulse);
-        proj.GetComponent<Projectile>().damage = shootDamage;
+        proj.GetComponent<Projectile>().damage = (int) shootDamage;
         proj.GetComponent<Projectile>().knockbackDirection = new Vector2(knockbackDirection.x * mouseDirection / 2, knockbackDirection.y);
     }
     
@@ -275,8 +278,63 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Border") || col.CompareTag("Root") || col.CompareTag("Snail") || col.CompareTag("Spider") || col.CompareTag("SpiderWeb") || col.CompareTag("Projectile")) return;
+
+        string text = "";
+        if (col.CompareTag("Strength"))
+        {
+            damage += 1;
+            shootDamage += 0.5f;
+            Destroy(col.gameObject);
+            text = "+STRENGTH";
+            if (damage >= 6)
+            {
+                damage = 6;
+            }
+            AudioManager.instance.Play("PowerUp", AudioManager.instance.effectSounds);
+        }
+        else if (col.CompareTag("Speed"))
+        {
+            moveSpeed += 1;
+            Destroy(col.gameObject);
+            text = "+SPEED";
+            if (moveSpeed >= 10)
+            {
+                moveSpeed = 10;
+            }
+            AudioManager.instance.Play("PowerUp", AudioManager.instance.effectSounds);
+        }
+        else if (col.CompareTag("Jump"))
+        {
+            jumpForce += 5;
+            Destroy(col.gameObject);
+            text = "+JUMP";
+            if (jumpForce >= 30)
+            {
+                jumpForce = 30;
+            }
+            AudioManager.instance.Play("PowerUp", AudioManager.instance.effectSounds);
+        }
+        else if (col.CompareTag("Heal"))
+        {
+            FindObjectOfType<RootManager>().Heal(2);
+            Destroy(col.gameObject);
+            AudioManager.instance.Play("Heal", AudioManager.instance.effectSounds);
+            text = "+HEAL";
+        }
+
+        GameObject ft = Instantiate(floatingText, floatingSpawnPoint.position, Quaternion.identity);
+        ft.GetComponent<FloatingText>().statText.text = text;
+        ft.transform.parent = partenTrans;
+    }
+
     private void GameOver()
     {
         gameOverScreen.SetActive(true);
+        AudioManager.instance.Play("GameOver", AudioManager.instance.effectSounds);
+        AudioManager.instance.Stop("Theme", AudioManager.instance.music);
+        Destroy(gameObject);
     }
 }

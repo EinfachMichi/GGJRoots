@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class RootManager : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
     [SerializeField] private Image[] hearts;
     [SerializeField] private Sprite[] heartIcons;
     [SerializeField] private Animator playerAnim;
@@ -12,18 +12,28 @@ public class RootManager : MonoBehaviour
 
     private int first = 0, second = 1, third = 2, fourth = 3;
     private bool isDead;
+    private int health;
 
     private void Start()
     {
+        health = maxHealth;
         rootAnim.SetInteger("Health", health);
+    }
+
+    public void Heal(int healValue)
+    {
+        health += healValue;
+        if (health >= maxHealth) health = maxHealth;
+        UglyHardcode();
     }
 
     public void TakeDamage(int damage)
     {
-        if (isDead) return;
+        if (isDead || EnemySpawnerManager.instance.gameOver) return;
         health -= damage;
         if (health <= 0)
         {
+            AudioManager.instance.Play("Crack", AudioManager.instance.effectSounds);
             isDead = true;
             playerAnim.SetTrigger("Death");
             FindObjectOfType<PlayerController>().isDead = true;
@@ -38,6 +48,11 @@ public class RootManager : MonoBehaviour
         }
         
         rootAnim.SetInteger("Health", health);
+        UglyHardcode();
+    }
+
+    private void UglyHardcode()
+    {
         switch (health)
         {
             case 8:
@@ -61,6 +76,7 @@ public class RootManager : MonoBehaviour
                 hearts[fourth].sprite = heartIcons[1];
                 break;
             case 6:
+                AudioManager.instance.Play("Crack", AudioManager.instance.effectSounds);
                 hearts[first].enabled = true;
                 hearts[first].sprite = heartIcons[0];
                 hearts[second].enabled = true;
@@ -79,6 +95,7 @@ public class RootManager : MonoBehaviour
                 hearts[fourth].enabled = false;
                 break;
             case 4:
+                AudioManager.instance.Play("Crack", AudioManager.instance.effectSounds);
                 hearts[first].enabled = true;
                 hearts[first].sprite = heartIcons[0];
                 hearts[second].enabled = true;
@@ -95,6 +112,7 @@ public class RootManager : MonoBehaviour
                 hearts[fourth].enabled = false;
                 break;
             case 2:
+                AudioManager.instance.Play("Crack", AudioManager.instance.effectSounds);
                 hearts[first].enabled = true;
                 hearts[first].sprite = heartIcons[0];
                 hearts[second].enabled = false;

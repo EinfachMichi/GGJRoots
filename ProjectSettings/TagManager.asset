@@ -9,6 +9,13 @@ TagManager:
   - SpiderWeb
   - Root
   - Spider
+  - Snail
+  - Strength
+  - Jump
+  - Heal
+  - Speed
+  - Border
+  - Tank
   layers:
   - Default
   - TransparentFX

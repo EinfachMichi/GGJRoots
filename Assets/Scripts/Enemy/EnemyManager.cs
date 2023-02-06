@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Enemy
 {
     public class EnemyManager : MonoBehaviour
     {
         [SerializeField] private int damage;
-        [SerializeField] public int health;
+        [SerializeField] public int maxHealth;
         [SerializeField] private float speed;
         [SerializeField] private float stoppingDistance;
         [SerializeField] private float attackCooldown;
@@ -19,6 +20,7 @@ namespace Enemy
         [SerializeField] private float horizontalAttackpointPosition;
         [SerializeField] private float attackRadius;
         [SerializeField] private LayerMask rootLayer;
+        [SerializeField] private GameObject[] drops;
 
         private Rigidbody2D rb;
         private Animator anim;
@@ -31,6 +33,7 @@ namespace Enemy
         [HideInInspector] public bool isDying;
         private bool playDeathAnim;
         private bool isStunned;
+        public int health;
         
         private void Awake()
         {
@@ -42,6 +45,7 @@ namespace Enemy
 
         private void Start()
         {
+            health = maxHealth;
             if (transform.position.x > 0) direction = -1;
             else if (transform.position.x < 0) direction = 1;
             transform.localScale = new Vector3( direction * -1f, 1f, 1f);
@@ -70,6 +74,7 @@ namespace Enemy
 
         private void Update()
         {
+            if (isDying) return;
             knockbackTimeCounter -= Time.deltaTime;
             if (knockbackTimeCounter <= 0 && !isDying && !isStunned)
             {
@@ -113,6 +118,7 @@ namespace Enemy
         {
             if (isDying) return;
             health -= damage;
+            AudioManager.instance.Play("Hit", AudioManager.instance.effectSounds);
             Knockback(knockbackDir);
         }
 
@@ -129,7 +135,18 @@ namespace Enemy
             else
             {
                 anim.SetTrigger("Hit");
+                if (gameObject.tag == "Tank")
+                {
+                    Death();
+                }
             }
+        }
+        
+        public void Heal(int heal)
+        {
+            if (isDying) return;
+            health += heal;
+            if (health >= maxHealth) health = maxHealth;
         }
 
         private void StartStun()
@@ -163,6 +180,7 @@ namespace Enemy
 
         private void AttackRoot()
         {
+            AudioManager.instance.Play("Bite", AudioManager.instance.effectSounds);
             Vector2 origin;
             if(direction == 1) origin = new Vector2(horizontalAttackpointPosition + transform.position.x, transform.position.y);
             else origin = new Vector2(transform.position.x - horizontalAttackpointPosition, transform.position.y);
@@ -174,6 +192,12 @@ namespace Enemy
         private IEnumerator Kill()
         {
             yield return new WaitForSeconds(destroyTime);
+            float rnd = Random.Range(0f, 1f);
+            if (rnd <= 0.05f)
+            {
+                int randomDrop = Random.Range(0, 3);
+                Instantiate(drops[randomDrop], transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+            }
             Destroy(gameObject);
         }
         

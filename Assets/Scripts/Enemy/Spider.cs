@@ -6,16 +6,19 @@ using UnityEngine;
 public class Spider : MonoBehaviour
 {
     public int damage;
-    public int health;
+    public int maxHealth;
     public float attackCooldown;
     public float bulletSpeed;
     public GameObject spiderWeb;
     public Transform attackPoint;
-
+    [HideInInspector] public bool left;
+    [HideInInspector] public bool right;
+    
     private BoxCollider2D collider;
     private Animator anim;
     private bool isDead;
     private int direction;
+    private int health;
 
 
     private void Awake()
@@ -26,6 +29,7 @@ public class Spider : MonoBehaviour
 
     private void Start()
     {
+        health = maxHealth;
         if (transform.position.x < 0) direction = -1;
         else if (transform.position.x > 0) direction = 1;
         transform.localScale = new Vector3(direction, 1, 1);
@@ -35,10 +39,17 @@ public class Spider : MonoBehaviour
     private void TakeDamage(int damage)
     {
         health -= damage;
+        AudioManager.instance.Play("Hit", AudioManager.instance.effectSounds);
         if (health <= 0)
         {
             Death();
         }
+    }
+
+    public void Heal(int heal)
+    {
+        health += heal;
+        if (health >= maxHealth) health = maxHealth;
     }
 
     private void Death()
@@ -46,6 +57,8 @@ public class Spider : MonoBehaviour
         isDead = true;
         collider.enabled = false;
         anim.SetTrigger("Death");
+        if (right) EnemySpawnerManager.instance.rightFree = true;
+        else if (left) EnemySpawnerManager.instance.leftFree = true;
     }
 
     private void Kill()

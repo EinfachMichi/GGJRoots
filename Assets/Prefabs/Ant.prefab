@@ -168,17 +168,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  health: 4
-  speed: 1.5
+  maxHealth: 4
+  speed: 1.66
   stoppingDistance: 1
   attackCooldown: 1.25
   knockbackTime: 0.66
-  destroyTime: 1
+  destroyTime: 0.5
+  stunTime: 0
   knockback: 1
   horizontalAttackpointPosition: 1
   attackRadius: 0.5
   rootLayer:
     serializedVersion: 2
     m_Bits: 128
+  drops:
+  - {fileID: 824912564543335895, guid: 059d3b5703fea02459304ebe51504261, type: 3}
+  - {fileID: 6875371277173632153, guid: 89c1e1d917cae1442a6083d90ac994af, type: 3}
+  - {fileID: 3358380548980358394, guid: 527fe2d43f0fba64988fb9eef5ba34b7, type: 3}
+  - {fileID: 4415983253236730436, guid: 17d4025b3f5e8904e8be1342f481a20e, type: 3}
   direction: 0
   isDying: 0
+  health: 4

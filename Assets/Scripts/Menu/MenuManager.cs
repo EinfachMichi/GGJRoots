@@ -7,13 +7,13 @@ namespace Menu
     public class MenuManager : MonoBehaviour
     {
         [SerializeField] private GameObject startPanel;
-        [SerializeField] private GameObject optionsPanel;
         [SerializeField] private Animator camAnimator;
+        [SerializeField] private Texture2D cursor;
 
         private void Start()
         {
             startPanel.SetActive(true);
-            optionsPanel.SetActive(false);
+            Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
         }
 
         public void StartButton()
@@ -27,18 +27,6 @@ namespace Menu
             SceneManager.LoadScene("GameScene");
         }
 
-        public void OptionsButton()
-        {
-            startPanel.SetActive(false);
-            optionsPanel.SetActive(true);
-        }
-
-        public void BackButton()
-        {
-            startPanel.SetActive(true);
-            optionsPanel.SetActive(false);
-        }
-        
         public void QuitButton()
         {
             Application.Quit();
